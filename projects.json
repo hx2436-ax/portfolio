@@ -244,5 +244,31 @@
     "intro": "A graphic identity proposal for an exhibition about self-exploration.",
     "body": "The project explores an exhibition identity through typographic marks and graphic variations. Its visual studies consider how a concise symbol can carry a theme across different applications.",
     "body2": "Developed as a proposal in Fall 2023."
+  },
+  {
+    "slug": "gowanus-research-zine",
+    "title": "Research + Zine",
+    "short": "Brooklyn, water, and everyday life.",
+    "cat": "Research",
+    "type": "Urban research \u00b7 Mapping \u00b7 Editorial design",
+    "location": "Brooklyn & New York City",
+    "year": "2026",
+    "time": "June\u2013July 2026",
+    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit; individual GIS research by Haotian Alex Xue",
+    "image": "summer/history-overview.webp",
+    "intro": "Historical research, cultural-access mapping, and The Gowanus Gazette."
+  },
+  {
+    "slug": "gowanus-flow",
+    "title": "Gowanus Flow",
+    "short": "A watershed of shared consequences.",
+    "cat": "Games",
+    "type": "Boardgame \u00b7 Water systems \u00b7 Collective play",
+    "location": "Gowanus, Brooklyn / NYC watershed",
+    "year": "2026",
+    "time": "July 2026",
+    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit",
+    "image": "summer/boardgame-hero.webp",
+    "intro": "A physical board game exploring infrastructure, weather, and collective responsibility."
   }
 ]

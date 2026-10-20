@@ -24,3 +24,18 @@
 
 /* Keep the expanded navigation readable on small screens. */
 @media(max-width:600px){.header{flex-wrap:wrap;gap:20px}.header nav{width:100%;flex-wrap:wrap;gap:18px 24px}.header nav a{white-space:nowrap}.header nav a:last-child{font-size:11px}.header nav a:last-child span{font-size:inherit}}
+
+/* Full-screen entry cover; the complete homepage follows in normal scroll flow. */
+body.home-page{max-width:none}
+.home-content{max-width:1800px;margin:0 auto;scroll-margin-top:0}
+.entry-cover{position:relative;isolation:isolate;width:100%;height:100vh;height:100svh;background:#29221d;color:#fff;display:grid;place-items:center;overflow:hidden}
+.entry-cover-image{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center}
+.entry-cover::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.27);pointer-events:none}
+.entry-cover-title{position:relative;z-index:1;text-align:center;padding:24px;width:100%;text-shadow:0 2px 18px rgba(0,0,0,.22)}
+.entry-cover-name{font-size:clamp(30px,5.5vw,84px);font-weight:400;letter-spacing:-.045em;line-height:1.1;white-space:nowrap}
+.entry-cover-subtitle{font-size:clamp(12px,1.2vw,18px);font-weight:400;letter-spacing:.14em;line-height:1.5;margin-top:20px}
+.entry-cover-scroll{position:absolute;z-index:1;left:50%;bottom:max(28px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;font-size:10px;letter-spacing:.1em;padding:12px;color:#fff}
+.entry-cover-scroll>span:last-child{font-size:23px;line-height:1}
+.entry-cover-scroll:focus-visible{outline-color:#fff}
+@media(max-width:600px){.entry-cover-title{padding:16px}.entry-cover-subtitle{margin-top:15px}.entry-cover-scroll{bottom:max(18px,env(safe-area-inset-bottom))}}
+@media print{.entry-cover{display:none}}

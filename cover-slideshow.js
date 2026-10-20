@@ -8,11 +8,55 @@
   let index = 0, timer = null, visible = true, ready = false;
   let paused = motion.matches;
   const sources = [
-    ['symphony-graffiti.webp', 'Symphony of Wind, Light and Life — Sarajevo'],
-    ['watertown/staging.webp', 'Fable of Watertown — installation'],
-    ['home-model.webp', 'A Home for Us — architectural model'],
-    ['summer/boardgame-hero.webp', 'Gowanus Flow — boardgame']
-  ];
+  [
+    "watertown/staging.webp",
+    "Fable of Watertown"
+  ],
+  [
+    "summer/boardgame-hero.webp",
+    "Gowanus Flow"
+  ],
+  [
+    "summer/cargo-zine-13.webp",
+    "Research + Zine"
+  ],
+  [
+    "symphony-graffiti.webp",
+    "Symphony of Wind, Light and Life"
+  ],
+  [
+    "salt-site-axon.webp",
+    "Re-Salting"
+  ],
+  [
+    "sharing-site-axon.webp",
+    "Sharing Above Park"
+  ],
+  [
+    "home-model.webp",
+    "A Home for Us"
+  ],
+  [
+    "texture.webp",
+    "Texture of the City"
+  ],
+  [
+    "london/source-433.webp",
+    "London, in Print"
+  ],
+  [
+    "london/source-425.webp",
+    "London Urban Studies"
+  ],
+  [
+    "bcb/page-13.webp",
+    "Black Citizen Brigade"
+  ],
+  [
+    "i-over-x/study-06.webp",
+    "I over X"
+  ]
+];
   function update() {
     clearInterval(timer);
     timer = null;

@@ -23,7 +23,7 @@
       slides[index].classList.remove('is-active');
       index = (index + 1) % slides.length;
       slides[index].classList.add('is-active');
-    }, 1000);
+    }, 5000);
   }
   control.addEventListener('click', () => { paused = !paused; update(); });
   document.addEventListener('visibilitychange', update);

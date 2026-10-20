@@ -63,3 +63,15 @@ body.home-page{max-width:none}
 .original-open{display:inline-block;font-size:12px;border-bottom:1px solid var(--line);padding:8px 0}
 .original-error{color:var(--accent);margin:12px 0}
 @media(max-width:600px){.portfolio-original{margin-top:48px;margin-bottom:48px}.original-controls button{padding:10px}.original-controls select{padding:10px}.portfolio-original .section-heading{align-items:flex-start;gap:12px;flex-direction:column}}
+
+/* Continuous image browsing, shared by galleries and publication readers. */
+#lightbox{padding-top:74px;padding-bottom:42px}
+.lightbox-controls{position:absolute;top:12px;left:24px;right:110px;display:flex;align-items:center;gap:20px;min-height:44px;font-size:12px}
+.lightbox-controls button{border:0;background:none;padding:12px 0;min-height:44px;cursor:pointer;white-space:nowrap}
+.lightbox-controls button:hover{color:var(--accent)}
+.lightbox-controls button:disabled{opacity:.35;cursor:default}
+[data-lightbox-count]{font-size:11px;font-variant-numeric:tabular-nums;min-width:48px;text-align:center;color:var(--muted)}
+#lightbox>.lightbox-hint{position:absolute;bottom:12px;left:12px;right:12px;line-height:1.5;pointer-events:none}
+#lightbox .lightbox-scroll img:not(.is-full-size){max-height:calc(96vh - 175px)}
+.lightbox-error{text-align:center;color:var(--accent);font-size:12px;padding:15px}
+@media(max-width:600px){.lightbox-controls{left:12px;right:90px;gap:14px}.lightbox-controls button{font-size:11px}#lightbox>.close{right:14px}#lightbox>.lightbox-hint{font-size:9px}}

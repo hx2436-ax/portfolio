@@ -13,14 +13,89 @@
   if ([...filters].some(button => button.dataset.filter === selected)) filter(selected);
   const dialog = document.querySelector('#lightbox');
   if (!dialog) return;
+  const image = dialog.querySelector('img');
+  const caption = dialog.querySelector('p');
+  const scroll = dialog.querySelector('.lightbox-scroll');
+  const toolbar = document.createElement('div');
+  toolbar.className = 'lightbox-controls';
+  toolbar.innerHTML = '<button type="button" data-lightbox-prev aria-label="Previous image">← Previous</button><span data-lightbox-count role="status" aria-live="polite" aria-atomic="true"></span><button type="button" data-lightbox-next aria-label="Next image">Next →</button>';
+  dialog.prepend(toolbar);
+  const hint = document.createElement('p');
+  hint.className = 'lightbox-hint';
+  hint.id = 'lightbox-hint';
+  hint.textContent = 'Click image to zoom · Use ← → to browse · Esc to close';
+  dialog.setAttribute('aria-describedby', hint.id);
+  dialog.append(hint);
+  const previous = toolbar.querySelector('[data-lightbox-prev]');
+  const next = toolbar.querySelector('[data-lightbox-next]');
+  const count = toolbar.querySelector('[data-lightbox-count]');
+  const error = document.createElement('p');
+  error.className = 'lightbox-error';
+  error.setAttribute('role', 'status');
+  error.textContent = 'This image could not load. Close the viewer and try again.';
+  error.hidden = true;
+  scroll.append(error);
+  let items = [], index = 0, onChange = null, opener = null;
+  function show(i) {
+    index = Math.max(0, Math.min(items.length - 1, i));
+    const item = items[index];
+    if (!item) return;
+    image.classList.remove('is-full-size');
+    image.setAttribute('aria-pressed', 'false');
+    error.hidden = true;
+    image.src = item.src;
+    image.alt = item.caption || '';
+    caption.textContent = item.caption || '';
+    count.textContent = `${index + 1} / ${items.length}`;
+    previous.disabled = index === 0;
+    next.disabled = index === items.length - 1;
+    scroll.scrollTop = scroll.scrollLeft = 0;
+    if (onChange) onChange(index);
+  }
+  function open(detail) {
+    if (!detail.items.length) return;
+    items = detail.items;
+    onChange = detail.onChange || null;
+    opener = detail.opener || document.activeElement;
+    show(detail.index || 0);
+    dialog.showModal();
+    document.body.classList.add('no-scroll');
+    dialog.querySelector('.close').focus();
+  }
   document.querySelectorAll('[data-zoom]').forEach(button => button.addEventListener('click', () => {
-    const img = dialog.querySelector('img'); img.src = button.dataset.zoom; img.alt = button.dataset.caption;
-    dialog.querySelector('p').textContent = button.dataset.caption;
-    dialog.showModal(); document.body.classList.add('no-scroll');
+    const reader = button.closest('[data-reader]');
+    if (reader) {
+      const captions = JSON.parse(reader.dataset.captions);
+      const select = reader.querySelector('[data-reader-select]');
+      open({
+        items: captions.map((text, i) => ({src: reader.dataset.prefix + String(i + 1).padStart(2, '0') + '.webp', caption: text})),
+        index: Number(select.value), opener: button,
+        onChange: i => { select.value = String(i); select.dispatchEvent(new Event('change')); }
+      });
+    } else {
+      const buttons = [...document.querySelectorAll('[data-zoom]')].filter(el => !el.closest('[data-reader], details:not([open])'));
+      open({items: buttons.map(el => ({src: el.dataset.zoom, caption: el.dataset.caption})), index: buttons.indexOf(button), opener: button});
+    }
   }));
+  document.addEventListener('portfolio:open-images', event => open(event.detail));
+  previous.addEventListener('click', () => show(index - 1));
+  next.addEventListener('click', () => show(index + 1));
+  dialog.addEventListener('keydown', event => {
+    if (event.altKey || event.ctrlKey || event.metaKey || /INPUT|SELECT|TEXTAREA/.test(event.target.tagName)) return;
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      event.stopPropagation();
+      show(index + (event.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  image.addEventListener('error', () => { error.hidden = false; });
+  image.addEventListener('load', () => { error.hidden = true; });
   dialog.querySelector('.close').addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => {if (event.target === dialog) dialog.close();});
-  dialog.addEventListener('close', () => document.body.classList.remove('no-scroll'));
+  dialog.addEventListener('close', () => {
+    document.body.classList.remove('no-scroll');
+    if (opener && opener.isConnected) opener.focus({preventScroll: true});
+  });
 })();
 
 // Complete publications: page controls update both the preview and lightbox.
@@ -102,11 +177,10 @@ if (enlargedImage) {
   });
   reader.querySelector('.original-sheet').addEventListener('click',()=>{
     if(swiped){swiped=false;return;}
-    const dialog=document.querySelector('#lightbox');
-    if(!dialog)return;
-    const large=dialog.querySelector('img');large.src=img.src;large.alt=img.alt;
-    dialog.querySelector('p').textContent=img.alt;
-    dialog.showModal();document.body.classList.add('no-scroll');
+    document.dispatchEvent(new CustomEvent('portfolio:open-images', {detail: {
+      items: project.pages.map(page => ({src:'/portfolio/assets/sheet-'+page+'.webp',caption:project.title+' — original portfolio page '+page})),
+      index, opener: reader.querySelector('.original-sheet'), onChange: show
+    }}));
   });
   show(0);
 })();

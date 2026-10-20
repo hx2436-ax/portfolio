@@ -1,5 +1,74 @@
 [
   {
+    "slug": "fable-of-watertown",
+    "title": "Fable of Watertown",
+    "short": "Cultural memory and the changing identity of water towns.",
+    "cat": "Research",
+    "type": "Undergraduate Direct Research · Installation",
+    "location": "Wuzhen, Zhejiang & Xinchang, Shanghai",
+    "year": "2026",
+    "time": "2026",
+    "team": "Haotian Alex Xue & Yihao Ryan Chen",
+    "image": "watertown/staging.webp",
+    "intro": "Relief painting, video projection, and sound examine tourism, cultural memory, and the transformation of Chinese water towns."
+  },
+  {
+    "slug": "gowanus-flow",
+    "title": "Gowanus Flow",
+    "short": "A watershed of shared consequences.",
+    "cat": "Games",
+    "type": "Boardgame · Water systems · Collective play",
+    "location": "Gowanus, Brooklyn / NYC watershed",
+    "year": "2026",
+    "time": "July 2026",
+    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit",
+    "image": "summer/boardgame-hero.webp",
+    "intro": "A physical board game exploring infrastructure, weather, and collective responsibility."
+  },
+  {
+    "slug": "gowanus-research-zine",
+    "title": "Research + Zine",
+    "short": "Brooklyn, water, and everyday life.",
+    "cat": "Research",
+    "type": "Urban research · Mapping · Editorial design",
+    "location": "Brooklyn & New York City",
+    "year": "2026",
+    "time": "June–July 2026",
+    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit; individual GIS research by Haotian Alex Xue",
+    "image": "summer/cargo-zine-13.webp",
+    "intro": "Historical research, cultural-access mapping, and The Gowanus Gazette."
+  },
+  {
+    "slug": "under-cantilever",
+    "title": "Under Cantilever",
+    "short": "A long life for materials and space.",
+    "cat": "Architecture",
+    "type": "Material reuse · Adaptive infrastructure",
+    "location": "South Boston, Massachusetts",
+    "year": "2025",
+    "time": "Spring 2025",
+    "team": "Haotian Alex Xue & Yihao Ryan Chen",
+    "instructor": "Il Wan Kim",
+    "image": "cantilever-model-01.webp",
+    "pages": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "captions": [
+      "Site, material lifespans, and reclamation strategy",
+      "Structural systems, testing, and assembly",
+      "Plans, circulation, and physical models",
+      "Sectional perspective and detail model",
+      "Proposed transitions: reclamation center, marketplace, and pier"
+    ],
+    "intro": "A building material reclamation center designed as a durable framework for changing uses and environmental conditions.",
+    "body": "Prestressed and post-tensioned concrete enable a large cantilever and flexible, column-free space for receiving, sorting, and redistributing reclaimed materials. Separate circulation accommodates trucks and processing at ground level, with offices above.",
+    "body2": "The design studies how a durable structure could adapt as sea levels and urban needs change. A sequence of possible futures—from reclamation center to marketplace to pier—extends reuse from individual materials to the life of an entire building."
+  },
+  {
     "slug": "symphony",
     "title": "Symphony of Wind, Light and Life",
     "short": "Wind, light, and collective life.",
@@ -104,36 +173,6 @@
     "intro": "A youth-centered community space that connects a new rail station with places for care and everyday public life.",
     "body": "House-like volumes form a gradient of privacy. Open programs activate the ground plane, while elevated wooden volumes accommodate counseling, studios, and health services. The proposal asks how transit investment can support existing communities.",
     "body2": "Frosted glass, wood, and reflective metal articulate different thresholds. Rooftop gardens and sports terraces extend the idea of home into collective outdoor space, bringing mobility, care, and public life together."
-  },
-  {
-    "slug": "under-cantilever",
-    "title": "Under Cantilever",
-    "short": "A long life for materials and space.",
-    "cat": "Architecture",
-    "type": "Material reuse · Adaptive infrastructure",
-    "location": "South Boston, Massachusetts",
-    "year": "2025",
-    "time": "Spring 2025",
-    "team": "Haotian Alex Xue & Yihao Ryan Chen",
-    "instructor": "Il Wan Kim",
-    "image": "cantilever-model-01.webp",
-    "pages": [
-      21,
-      22,
-      23,
-      24,
-      25
-    ],
-    "captions": [
-      "Site, material lifespans, and reclamation strategy",
-      "Structural systems, testing, and assembly",
-      "Plans, circulation, and physical models",
-      "Sectional perspective and detail model",
-      "Proposed transitions: reclamation center, marketplace, and pier"
-    ],
-    "intro": "A building material reclamation center designed as a durable framework for changing uses and environmental conditions.",
-    "body": "Prestressed and post-tensioned concrete enable a large cantilever and flexible, column-free space for receiving, sorting, and redistributing reclaimed materials. Separate circulation accommodates trucks and processing at ground level, with offices above.",
-    "body2": "The design studies how a durable structure could adapt as sea levels and urban needs change. A sequence of possible futures—from reclamation center to marketplace to pier—extends reuse from individual materials to the life of an entire building."
   },
   {
     "slug": "texture-of-the-city",
@@ -244,44 +283,5 @@
     "intro": "A graphic identity proposal for an exhibition about self-exploration.",
     "body": "The project explores an exhibition identity through typographic marks and graphic variations. Its visual studies consider how a concise symbol can carry a theme across different applications.",
     "body2": "Developed as a proposal in Fall 2023."
-  },
-  {
-    "slug": "gowanus-research-zine",
-    "title": "Research + Zine",
-    "short": "Brooklyn, water, and everyday life.",
-    "cat": "Research",
-    "type": "Urban research · Mapping · Editorial design",
-    "location": "Brooklyn & New York City",
-    "year": "2026",
-    "time": "June–July 2026",
-    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit; individual GIS research by Haotian Alex Xue",
-    "image": "summer/cargo-zine-13.webp",
-    "intro": "Historical research, cultural-access mapping, and The Gowanus Gazette."
-  },
-  {
-    "slug": "gowanus-flow",
-    "title": "Gowanus Flow",
-    "short": "A watershed of shared consequences.",
-    "cat": "Games",
-    "type": "Boardgame · Water systems · Collective play",
-    "location": "Gowanus, Brooklyn / NYC watershed",
-    "year": "2026",
-    "time": "July 2026",
-    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit",
-    "image": "summer/boardgame-hero.webp",
-    "intro": "A physical board game exploring infrastructure, weather, and collective responsibility."
-  },
-  {
-    "slug": "fable-of-watertown",
-    "title": "Fable of Watertown",
-    "short": "Cultural memory and the changing identity of water towns.",
-    "cat": "Research",
-    "type": "Undergraduate Direct Research · Installation",
-    "location": "Wuzhen, Zhejiang & Xinchang, Shanghai",
-    "year": "2026",
-    "time": "2026",
-    "team": "Haotian Alex Xue & Yihao Ryan Chen",
-    "image": "watertown/staging.webp",
-    "intro": "Relief painting, video projection, and sound examine tourism, cultural memory, and the transformation of Chinese water towns."
   }
 ]

@@ -39,3 +39,10 @@ body.home-page{max-width:none}
 .entry-cover-scroll:focus-visible{outline-color:#fff}
 @media(max-width:600px){.entry-cover-title{padding:16px}.entry-cover-subtitle{margin-top:15px}.entry-cover-scroll{bottom:max(18px,env(safe-area-inset-bottom))}}
 @media print{.entry-cover{display:none}}
+
+/* One-second cover slideshow with a 450ms blur dissolve. */
+.entry-cover-image{opacity:0;filter:blur(12px);transform:scale(1.035);transition:opacity 450ms ease,filter 450ms ease;pointer-events:none}
+.entry-cover-image.is-active{opacity:1;filter:blur(0)}
+.entry-cover-toggle{position:absolute;z-index:2;bottom:max(38px,env(safe-area-inset-bottom));right:var(--gutter);border:1px solid rgba(255,255,255,.5);background:rgba(0,0,0,.15);color:#fff;padding:10px 14px;font-size:10px;letter-spacing:.08em;cursor:pointer}
+.entry-cover-toggle:focus-visible{outline-color:#fff}
+@media(prefers-reduced-motion:reduce){.entry-cover-image{filter:none;transform:none;transition:none}}

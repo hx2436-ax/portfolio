@@ -17,10 +17,6 @@
     "Gowanus Flow"
   ],
   [
-    "summer/cargo-zine-13.webp",
-    "Research + Zine"
-  ],
-  [
     "symphony-graffiti.webp",
     "Symphony of Wind, Light and Life"
   ],
@@ -39,10 +35,6 @@
   [
     "texture.webp",
     "Texture of the City"
-  ],
-  [
-    "london/source-433.webp",
-    "London, in Print"
   ],
   [
     "london/source-425.webp",
@@ -67,7 +59,7 @@
       slides[index].classList.remove('is-active');
       index = (index + 1) % slides.length;
       slides[index].classList.add('is-active');
-    }, 5000);
+    }, 3000);
   }
   control.addEventListener('click', () => { paused = !paused; update(); });
   document.addEventListener('visibilitychange', update);

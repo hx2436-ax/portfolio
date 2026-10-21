@@ -75,3 +75,11 @@ body.home-page{max-width:none}
 #lightbox .lightbox-scroll img:not(.is-full-size){max-height:calc(96vh - 175px)}
 .lightbox-error{text-align:center;color:var(--accent);font-size:12px;padding:15px}
 @media(max-width:600px){.lightbox-controls{left:12px;right:90px;gap:14px}.lightbox-controls button{font-size:11px}#lightbox>.close{right:14px}#lightbox>.lightbox-hint{font-size:9px}}
+
+/* Individual drawings and project chapter navigation */
+.project-chapters{margin:0 var(--gutter) 32px;display:flex;flex-wrap:wrap;gap:10px 23px;padding:16px 0;border-top:1px solid var(--line);font-size:11px;line-height:1.6}
+.project-chapters>span{color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-size:9px;align-self:center}.project-chapters a{border-bottom:1px solid transparent}.project-chapters a:hover{border-color:var(--accent);color:var(--accent)}
+.detail-chapter{margin-bottom:80px}.detail-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 28px;align-items:start}.detail-figure img{width:100%;height:auto;background:#fff}.detail-figure figcaption{font-size:11px;color:var(--muted);line-height:1.6;margin-top:13px}.detail-figure:last-child:nth-child(odd){grid-column:1/-1}.detail-figure:has(img[width]):first-child:last-child{grid-column:1/-1}
+@media(max-width:760px){.detail-gallery{grid-template-columns:1fr;gap:30px}.detail-chapter{margin-bottom:55px}.detail-figure:last-child:nth-child(odd){grid-column:auto}.project-chapters{gap:10px 18px;font-size:10px}.project-chapters>span{width:100%}}
+
+.detail-figure.detail-wide{grid-column:1/-1}

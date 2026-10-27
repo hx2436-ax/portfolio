@@ -135,6 +135,9 @@ if (enlargedImage) {
 (() => {
   const archive = {"under-cantilever":{"title":"Under Cantilever","pages":[20,21,22,23,24,25]},"symphony":{"title":"Symphony of Wind, Light and Life","pages":[3,4,5,6,7]},"re-salting":{"title":"Re-Salting","pages":[8,9,10,11]},"sharing-above-park":{"title":"Sharing Above Park","pages":[12,13,14,15]},"a-home-for-us":{"title":"A Home for Us","pages":[16,17,18,19]},"texture-of-the-city":{"title":"Texture of the City","pages":[26]},"london-zines":{"title":"London, in Print","pages":[27]},"london-urban-studies":{"title":"London Urban Studies","pages":[27]},"black-citizen-brigade":{"title":"Black Citizen Brigade","pages":[28]},"i-over-x":{"title":"I over X","pages":[28]}};
   const slug = location.pathname.replace(/\/index\.html$/, '/').split('/').filter(Boolean).pop();
+  if (slug === 'under-cantilever') {
+    archive[slug] = {title: 'Under Cantilever', pages: [3,4,5,6,7,8], date: 'October 2026', imageBase: '/portfolio/assets/cantilever-202610/sheet-'};
+  }
   const project = archive[slug];
   const anchor = document.querySelector('.next-project');
   if (!project || !anchor || document.getElementById('portfolio-original')) return;
@@ -143,6 +146,12 @@ if (enlargedImage) {
   reader.className = 'portfolio-original';
   reader.setAttribute('aria-labelledby', 'portfolio-original-title');
   reader.innerHTML = '<div class="section-heading"><h2 id="portfolio-original-title">Original portfolio</h2><span class="eyebrow">September 2026</span></div><p class="original-note">Read the original portfolio layout. Select a page to enlarge.</p><div class="original-controls"><button type="button" data-previous aria-label="Previous portfolio page">← Previous</button><label>Page <select aria-label="Choose original portfolio page"></select></label><button type="button" data-next aria-label="Next portfolio page">Next →</button></div><figure><button type="button" class="original-sheet" aria-label="Enlarge portfolio page"><img loading="lazy" decoding="async" alt=""></button><figcaption aria-live="polite"></figcaption></figure><p class="original-error" role="status" hidden>This page could not load. Choose another page or open the page image below.</p><a class="original-open" target="_blank" rel="noopener noreferrer">Open page image</a>';
+  if (project.date) {
+    reader.querySelector('h2').textContent = 'Updated portfolio';
+    reader.querySelector('.eyebrow').textContent = project.date;
+    reader.querySelector('.original-note').textContent = 'Read the updated project layout. Select a page to enlarge.';
+  }
+  const pageSource = page => (project.imageBase || '/portfolio/assets/sheet-') + page + '.webp';
   anchor.before(reader);
   const select = reader.querySelector('select'), prev = reader.querySelector('[data-previous]'), next = reader.querySelector('[data-next]');
   const img = reader.querySelector('img'), caption = reader.querySelector('figcaption'), open = reader.querySelector('.original-open'), error = reader.querySelector('.original-error');
@@ -151,7 +160,7 @@ if (enlargedImage) {
   function show(i) {
     index = Math.max(0, Math.min(project.pages.length-1,i));
     const page=project.pages[index];
-    const src='/portfolio/assets/sheet-'+page+'.webp';
+    const src=pageSource(page);
     error.hidden=true;
     img.src=src;img.alt=project.title+' — original portfolio page '+page;
     caption.textContent=(index+1)+' / '+project.pages.length+' · Portfolio page '+page;
@@ -178,7 +187,7 @@ if (enlargedImage) {
   reader.querySelector('.original-sheet').addEventListener('click',()=>{
     if(swiped){swiped=false;return;}
     document.dispatchEvent(new CustomEvent('portfolio:open-images', {detail: {
-      items: project.pages.map(page => ({src:'/portfolio/assets/sheet-'+page+'.webp',caption:project.title+' — original portfolio page '+page})),
+      items: project.pages.map(page => ({src:pageSource(page),caption:project.title+' — original portfolio page '+page})),
       index, opener: reader.querySelector('.original-sheet'), onChange: show
     }}));
   });

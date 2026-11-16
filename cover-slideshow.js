@@ -9,7 +9,7 @@
   let paused = motion.matches;
   const sources = [
   [
-    "portfolio-20261112/wind-render.webp",
+    "symphony-graffiti.webp",
     "Symphony of Wind, Light and Life"
   ],
   [

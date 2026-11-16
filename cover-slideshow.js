@@ -9,44 +9,28 @@
   let paused = motion.matches;
   const sources = [
   [
-    "watertown/staging.webp",
-    "Fable of Watertown"
-  ],
-  [
-    "summer/boardgame-hero.webp",
-    "Gowanus Flow"
-  ],
-  [
-    "symphony-graffiti.webp",
+    "portfolio-20261112/wind-render.webp",
     "Symphony of Wind, Light and Life"
   ],
   [
-    "salt-site-axon.webp",
-    "Re-Salting"
+    "portfolio-20261112/gowanus-cover.webp",
+    "Gowanus Flow"
   ],
   [
-    "sharing-site-axon.webp",
+    "portfolio-20261112/salt-cover.webp",
+    "Re-Salting: Salt as Urban Landscape"
+  ],
+  [
+    "portfolio-20261112/sharing-cover.webp",
     "Sharing Above Park"
   ],
   [
-    "home-model.webp",
-    "A Home for Us"
+    "portfolio-20261112/watertown-cover.webp",
+    "Fable of Watertown"
   ],
   [
-    "texture.webp",
+    "portfolio-20261112/texture-exhibition.webp",
     "Texture of the City"
-  ],
-  [
-    "london/source-425.webp",
-    "London Urban Studies"
-  ],
-  [
-    "bcb/page-13.webp",
-    "Black Citizen Brigade"
-  ],
-  [
-    "i-over-x/study-06.webp",
-    "I over X"
   ]
 ];
   function update() {

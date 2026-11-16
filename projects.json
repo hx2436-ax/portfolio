@@ -1,44 +1,5 @@
 [
   {
-    "slug": "fable-of-watertown",
-    "title": "Fable of Watertown",
-    "short": "Cultural memory and the changing identity of water towns.",
-    "cat": "Research",
-    "type": "Undergraduate Direct Research · Installation",
-    "location": "Wuzhen, Zhejiang & Xinchang, Shanghai",
-    "year": "2026",
-    "time": "2026",
-    "team": "Haotian Alex Xue & Yihao Ryan Chen",
-    "image": "watertown/staging.webp",
-    "intro": "Relief painting, video projection, and sound examine tourism, cultural memory, and the transformation of Chinese water towns."
-  },
-  {
-    "slug": "gowanus-flow",
-    "title": "Gowanus Flow",
-    "short": "A watershed of shared consequences.",
-    "cat": "Games",
-    "type": "Boardgame · Water systems · Collective play",
-    "location": "Gowanus, Brooklyn / NYC watershed",
-    "year": "2026",
-    "time": "July 2026",
-    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit",
-    "image": "summer/boardgame-hero.webp",
-    "intro": "A physical board game exploring infrastructure, weather, and collective responsibility."
-  },
-  {
-    "slug": "gowanus-research-zine",
-    "title": "Research + Zine",
-    "short": "Brooklyn, water, and everyday life.",
-    "cat": "Research",
-    "type": "Urban research · Mapping · Editorial design",
-    "location": "Brooklyn & New York City",
-    "year": "2026",
-    "time": "June–July 2026",
-    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit; individual GIS research by Haotian Alex Xue",
-    "image": "summer/cargo-zine-13.webp",
-    "intro": "Historical research, cultural-access mapping, and The Gowanus Gazette."
-  },
-  {
     "slug": "under-cantilever",
     "title": "Under Cantilever",
     "short": "A long life for materials and space.",
@@ -49,24 +10,22 @@
     "time": "Spring 2025",
     "team": "Haotian Alex Xue & Yihao Ryan Chen",
     "instructor": "Il Wan Kim",
-    "image": "cantilever-model-01.webp",
+    "image": "portfolio-20261112/cantilever-cover.webp",
     "pages": [
-      21,
-      22,
-      23,
-      24,
-      25
-    ],
-    "captions": [
-      "Site, material lifespans, and reclamation strategy",
-      "Structural systems, testing, and assembly",
-      "Plans, circulation, and physical models",
-      "Sectional perspective and detail model",
-      "Proposed transitions: reclamation center, marketplace, and pier"
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ],
     "intro": "A building material reclamation center designed as a durable framework for changing uses and environmental conditions.",
     "body": "Prestressed and post-tensioned concrete enable a large cantilever and flexible, column-free space for receiving, sorting, and redistributing reclaimed materials. Separate circulation accommodates trucks and processing at ground level, with offices above.",
-    "body2": "The design studies how a durable structure could adapt as sea levels and urban needs change. A sequence of possible futures—from reclamation center to marketplace to pier—extends reuse from individual materials to the life of an entire building."
+    "body2": "The design studies how a durable structure could adapt as sea levels and urban needs change. A sequence of possible futures—from reclamation center to marketplace to pier—extends reuse from individual materials to the life of an entire building.",
+    "index": "01",
+    "section": "Selected projects",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
   },
   {
     "slug": "symphony",
@@ -79,26 +38,53 @@
     "time": "Spring 2024",
     "team": "Haotian Alex Xue & Yihao Ryan Chen",
     "instructor": "Christina Chi Zhang",
-    "image": "symphony-graffiti.webp",
+    "image": "portfolio-20261112/wind-render.webp",
     "pages": [
-      4,
-      5,
-      6,
-      7
+      10,
+      11,
+      12,
+      13,
+      14
     ],
-    "captions": [
-      "Urban history, landscape, and community needs",
-      "Three experiential zones and the masterplan",
-      "Spatial studies and the long section",
-      "Wind Walk, Light Pavilion, and Garden Walk"
-    ],
-    "intro": "A post-war urban seed library and public landscape that reconnects people with nature, memory, and one another.",
+    "intro": "A storybook, urban seed library, and sensory gardens reconnect Sarajevo’s everyday life with nature and collective memory.",
     "body": "An underused urban space becomes a sensory journey through three experiences: the Wind Walk, the Light Pavilion, and the Garden Walk. Valley winds, shifting light, and Sarajevo’s tradition of home gardening inform spaces for play, rest, cultivation, and collective gathering.",
-    "body2": "A living seed library invites residents to exchange, grow, and learn from local plants. Ecological renewal becomes a shared civic practice, with public space supporting everyday encounters and collective healing."
+    "body2": "A living seed library invites residents to exchange, grow, and learn from local plants. Ecological renewal becomes a shared civic practice, with public space supporting everyday encounters and collective healing.",
+    "index": "02",
+    "section": "Selected projects",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "gowanus-flow",
+    "title": "Gowanus Flow",
+    "short": "A watershed of shared consequences.",
+    "cat": "Research",
+    "type": "Urban research · Zine · Board game",
+    "location": "Gowanus, Brooklyn / NYC watershed",
+    "year": "2026",
+    "time": "Summer 2026",
+    "team": "Haotian Alex Xue, Kaylee Ngitit & Amara Leazer",
+    "image": "portfolio-20261112/gowanus-cover.webp",
+    "intro": "Urban water systems research through zine, storytelling, and an interactive board game.",
+    "index": "03",
+    "section": "Selected projects",
+    "pages": [
+      15,
+      16,
+      17,
+      18
+    ],
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-",
+    "instructor": "Neeraj Bhatia",
+    "categories": [
+      "Research",
+      "Games"
+    ]
   },
   {
     "slug": "re-salting",
-    "title": "Re-Salting",
+    "title": "Re-Salting: Salt as Urban Landscape",
     "short": "Salt as urban landscape.",
     "cat": "Architecture",
     "type": "Infrastructure · Public space",
@@ -107,20 +93,20 @@
     "time": "Spring 2023",
     "team": "Haotian Alex Xue",
     "instructor": "Marie Stargala",
-    "image": "salt-site-axon.webp",
+    "image": "portfolio-20261112/salt-cover.webp",
     "pages": [
-      9,
-      10,
-      11
-    ],
-    "captions": [
-      "Salt experiments and a three-layer civic infrastructure",
-      "Plans and exterior perspectives",
-      "Sections, elevations, and interior atmosphere"
+      19,
+      20,
+      21,
+      22
     ],
     "intro": "A salt shed that brings municipal infrastructure, public space, and material education into a shared urban landscape.",
     "body": "The proposal exposes the spatial and aesthetic qualities of salt: natural dunes, crystalline textures, and shifting volumes. A three-layer system preserves storage and redistribution below, introduces a public terrace in the middle, and gives the roof a silhouette informed by geological formations.",
-    "body2": "Seasonal rhythms and day–night differences organize logistical flows and public activities. The industrial facility becomes a civic interface where essential operations and everyday public experience can coexist."
+    "body2": "Seasonal rhythms and day–night differences organize logistical flows and public activities. The industrial facility becomes a civic interface where essential operations and everyday public experience can coexist.",
+    "index": "04",
+    "section": "Selected projects",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
   },
   {
     "slug": "sharing-above-park",
@@ -133,20 +119,175 @@
     "time": "Fall 2023",
     "team": "Haotian Alex Xue",
     "instructor": "Richard Rosa",
-    "image": "sharing-site-axon.webp",
+    "image": "portfolio-20261112/sharing-cover.webp",
     "pages": [
-      13,
-      14,
-      15
-    ],
-    "captions": [
-      "Exploded axonometric and the layers of shared space",
-      "Residential plans and spatial studies",
-      "Elevations, sections, and collective thresholds"
+      23,
+      24,
+      25,
+      26
     ],
     "intro": "A residential complex exploring the changing boundary between public and private life.",
     "body": "Two residential volumes are lifted above a public platform. An urban ground level, a courtyard connected to the park, and communal rooftop programs create a sequence of shared spaces between domestic life and the city.",
-    "body2": "Partially shared balconies and accessible terraces encourage encounters while retaining places for individual retreat. Privacy is approached as a condition shaped through proximity and thresholds, with architecture mediating among people, nature, and urban activity."
+    "body2": "Partially shared balconies and accessible terraces encourage encounters while retaining places for individual retreat. Privacy is approached as a condition shaped through proximity and thresholds, with architecture mediating among people, nature, and urban activity.",
+    "index": "05",
+    "section": "Selected projects",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "texture-of-the-city",
+    "title": "Texture of the City",
+    "short": "Reading the city through its traces.",
+    "cat": "Exhibition",
+    "type": "Exhibition · Art · Urban heritage",
+    "location": "Shanghai, China",
+    "year": "2020",
+    "time": "2020",
+    "team": "Haotian Alex Xue / Issue Studio",
+    "instructor": "",
+    "image": "portfolio-20261112/texture-exhibition.webp",
+    "pages": [
+      27
+    ],
+    "intro": "An exhibition bringing together artwork, architectural research, and observations of Shanghai’s urban texture.",
+    "body": "The exhibition connects personal readings of the city with collective research on Shikumen heritage. Mixed-media work, postcards, spatial studies, and exhibition design offer different ways of looking at the city and its everyday traces.",
+    "body2": "The portfolio documents individual artwork alongside group research and exhibition work developed through Issue Studio.",
+    "index": "06.01",
+    "section": "Beyond?",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "fable-of-watertown",
+    "title": "Fable of Watertown",
+    "short": "Cultural memory and the changing identity of water towns.",
+    "cat": "Research",
+    "type": "Undergraduate Direct Research · Installation",
+    "location": "Wuzhen, Zhejiang & Xinchang, Shanghai",
+    "year": "2026",
+    "time": "Spring 2026",
+    "team": "Haotian Alex Xue & Yihao Ryan Chen",
+    "image": "portfolio-20261112/watertown-cover.webp",
+    "intro": "Fable of Watertown examines how rapid economic development and tourism reshape Chinese water towns. Focusing on Wuzhen and Xinchang, the research follows the shift from places shaped by cultural memory and everyday life toward environments defined by repeated commercial models and tourist consumption.",
+    "index": "06.02",
+    "section": "Beyond?",
+    "pages": [
+      28
+    ],
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "london-zines",
+    "title": "London, in Print",
+    "short": "Architecture observed and assembled.",
+    "cat": "Research",
+    "type": "Zines · Research representation",
+    "location": "London, United Kingdom",
+    "year": "2024",
+    "time": "Fall 2024",
+    "team": "Haotian Alex Xue",
+    "instructor": "",
+    "image": "london/source-433.webp",
+    "pages": [
+      29
+    ],
+    "intro": "Zine studies of the V&A Museum and Laban Dance Centre.",
+    "body": "Editorial layouts, photographs, and graphic studies bring architectural observations into a compact printed format. The work explores the zine as a tool for organizing and communicating research.",
+    "body2": "Produced during the Fall 2024 London study-abroad semester.",
+    "index": "06.03",
+    "section": "Beyond?",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "london-urban-studies",
+    "title": "London Urban Studies",
+    "short": "Neighborhoods, models, and representation.",
+    "cat": "Research",
+    "type": "Urban research · Physical models · AR",
+    "location": "Highgate & Wood Green, London",
+    "year": "2024",
+    "time": "Fall 2024",
+    "team": "Haotian Alex Xue",
+    "instructor": "",
+    "image": "london/source-425.webp",
+    "pages": [
+      29
+    ],
+    "intro": "Community research translated into modular studies, physical representations, and experiments with augmented reality.",
+    "body": "Studies of Highgate and Wood Green examine the relationship between urban form and community life. A modular proposal for the old Highgate train station and a workplace palette emerge from neighborhood research.",
+    "body2": "Physical studies use a wheel to represent changing housing types and social composition, and strings to represent rooftop wires. AR is explored as another way to engage with design representations.",
+    "index": "06.04",
+    "section": "Beyond?",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "black-citizen-brigade",
+    "title": "Black Citizen Brigade",
+    "short": "An identity for a local archive.",
+    "cat": "Graphics",
+    "type": "Branding · Archiving proposal",
+    "location": "Syracuse, New York",
+    "year": "2026",
+    "time": "Spring 2026",
+    "team": "Collective studio project; graphic design and publication editing by Alex Haotian Xue",
+    "instructor": "",
+    "image": "bcb/page-13.webp",
+    "pages": [
+      30
+    ],
+    "intro": "A branding and archiving standards proposal for a local vintage shop in Syracuse.",
+    "body": "A collective proposal connecting visual identity, archival organization, and spatial design. Alex Haotian Xue contributed graphic design and mock-ups, the cover and contents, and book layout and editing.",
+    "body2": "Developed as a proposal in Spring 2026.",
+    "index": "06.05",
+    "section": "Beyond?",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "i-over-x",
+    "title": "I over X",
+    "short": "An identity for self-exploration.",
+    "cat": "Graphics",
+    "type": "Exhibition branding proposal",
+    "location": "",
+    "year": "2023",
+    "time": "Fall 2023",
+    "team": "Haotian Alex Xue",
+    "instructor": "",
+    "image": "i-over-x/study-06.webp",
+    "pages": [
+      30
+    ],
+    "intro": "A graphic identity proposal for an exhibition about self-exploration.",
+    "body": "The project explores an exhibition identity through typographic marks and graphic variations. Its visual studies consider how a concise symbol can carry a theme across different applications.",
+    "body2": "Developed as a proposal in Fall 2023.",
+    "index": "06.06",
+    "section": "Beyond?",
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
+  },
+  {
+    "slug": "gowanus-research-zine",
+    "title": "The Gowanus Gazette & Urban Research",
+    "short": "Research behind Gowanus Flow.",
+    "cat": "Research",
+    "type": "Urban research · Mapping · Editorial design",
+    "location": "Brooklyn & New York City",
+    "year": "2026",
+    "time": "June–July 2026",
+    "team": "Haotian Alex Xue, Amara Leazer & Kaylee Ngitit; individual GIS research by Haotian Alex Xue",
+    "image": "summer/cargo-zine-13.webp",
+    "intro": "Historical research, cultural-access mapping, and The Gowanus Gazette.",
+    "index": "03.R",
+    "section": "Related & earlier work",
+    "pages": [
+      16
+    ],
+    "edition": "2026-11-12",
+    "imageBase": "/portfolio/assets/portfolio-20261112/sheet-"
   },
   {
     "slug": "a-home-for-us",
@@ -172,116 +313,8 @@
     ],
     "intro": "A youth-centered community space that connects a new rail station with places for care and everyday public life.",
     "body": "House-like volumes form a gradient of privacy. Open programs activate the ground plane, while elevated wooden volumes accommodate counseling, studios, and health services. The proposal asks how transit investment can support existing communities.",
-    "body2": "Frosted glass, wood, and reflective metal articulate different thresholds. Rooftop gardens and sports terraces extend the idea of home into collective outdoor space, bringing mobility, care, and public life together."
-  },
-  {
-    "slug": "texture-of-the-city",
-    "title": "Texture of the City",
-    "short": "Reading the city through its traces.",
-    "cat": "Exhibition",
-    "type": "Exhibition · Art · Urban heritage",
-    "location": "Shanghai, China",
-    "year": "2020",
-    "time": "2020",
-    "team": "Haotian Alex Xue / Issue Studio",
-    "instructor": "",
-    "image": "texture.webp",
-    "pages": [
-      26
-    ],
-    "captions": [
-      "Exhibition, mixed-media artwork, Shikumen research, and postcards"
-    ],
-    "intro": "An exhibition bringing together artwork, architectural research, and observations of Shanghai’s urban texture.",
-    "body": "The exhibition connects personal readings of the city with collective research on Shikumen heritage. Mixed-media work, postcards, spatial studies, and exhibition design offer different ways of looking at the city and its everyday traces.",
-    "body2": "The portfolio documents individual artwork alongside group research and exhibition work developed through Issue Studio."
-  },
-  {
-    "slug": "london-zines",
-    "title": "London, in Print",
-    "short": "Architecture observed and assembled.",
-    "cat": "Research",
-    "type": "Zines · Research representation",
-    "location": "London, United Kingdom",
-    "year": "2024",
-    "time": "Fall 2024",
-    "team": "Haotian Alex Xue",
-    "instructor": "",
-    "image": "london/source-433.webp",
-    "pages": [
-      27
-    ],
-    "captions": [
-      "Zines and research representations from the London semester"
-    ],
-    "intro": "Zine studies of the V&A Museum and Laban Dance Centre.",
-    "body": "Editorial layouts, photographs, and graphic studies bring architectural observations into a compact printed format. The work explores the zine as a tool for organizing and communicating research.",
-    "body2": "Produced during the Fall 2024 London study-abroad semester."
-  },
-  {
-    "slug": "london-urban-studies",
-    "title": "London Urban Studies",
-    "short": "Neighborhoods, models, and representation.",
-    "cat": "Research",
-    "type": "Urban research · Physical models · AR",
-    "location": "Highgate & Wood Green, London",
-    "year": "2024",
-    "time": "Fall 2024",
-    "team": "Haotian Alex Xue",
-    "instructor": "",
-    "image": "london/source-425.webp",
-    "pages": [
-      27
-    ],
-    "captions": [
-      "Highgate and Wood Green studies, physical representations, and AR experiments"
-    ],
-    "intro": "Community research translated into modular studies, physical representations, and experiments with augmented reality.",
-    "body": "Studies of Highgate and Wood Green examine the relationship between urban form and community life. A modular proposal for the old Highgate train station and a workplace palette emerge from neighborhood research.",
-    "body2": "Physical studies use a wheel to represent changing housing types and social composition, and strings to represent rooftop wires. AR is explored as another way to engage with design representations."
-  },
-  {
-    "slug": "black-citizen-brigade",
-    "title": "Black Citizen Brigade",
-    "short": "An identity for a local archive.",
-    "cat": "Graphics",
-    "type": "Branding · Archiving proposal",
-    "location": "Syracuse, New York",
-    "year": "2026",
-    "time": "Spring 2026",
-    "team": "Collective studio project; graphic design and publication editing by Alex Haotian Xue",
-    "instructor": "",
-    "image": "bcb/page-13.webp",
-    "pages": [
-      28
-    ],
-    "captions": [
-      "Branding and archiving standards proposal, shown alongside exhibition identity work"
-    ],
-    "intro": "A branding and archiving standards proposal for a local vintage shop in Syracuse.",
-    "body": "A collective proposal connecting visual identity, archival organization, and spatial design. Alex Haotian Xue contributed graphic design and mock-ups, the cover and contents, and book layout and editing.",
-    "body2": "Developed as a proposal in Spring 2026."
-  },
-  {
-    "slug": "i-over-x",
-    "title": "I over X",
-    "short": "An identity for self-exploration.",
-    "cat": "Graphics",
-    "type": "Exhibition branding proposal",
-    "location": "",
-    "year": "2023",
-    "time": "Fall 2023",
-    "team": "Haotian Alex Xue",
-    "instructor": "",
-    "image": "i-over-x/study-06.webp",
-    "pages": [
-      28
-    ],
-    "captions": [
-      "Exhibition identity proposal, shown alongside the vintage-shop branding study"
-    ],
-    "intro": "A graphic identity proposal for an exhibition about self-exploration.",
-    "body": "The project explores an exhibition identity through typographic marks and graphic variations. Its visual studies consider how a concise symbol can carry a theme across different applications.",
-    "body2": "Developed as a proposal in Fall 2023."
+    "body2": "Frosted glass, wood, and reflective metal articulate different thresholds. Rooftop gardens and sports terraces extend the idea of home into collective outdoor space, bringing mobility, care, and public life together.",
+    "index": "A1",
+    "section": "Related & earlier work"
   }
 ]

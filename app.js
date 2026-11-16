@@ -3,7 +3,7 @@
   const cards = document.querySelectorAll('#projects .project-card');
   function filter(category) {
     let count = 0;
-    cards.forEach(card => { card.hidden = category !== 'All' && card.dataset.category !== category; if (!card.hidden) count++; });
+    cards.forEach(card => { card.hidden = category !== 'All' && !(card.dataset.categories || card.dataset.category || '').split(' ').includes(category); if (!card.hidden) count++; });
     filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === category)));
     const output = document.getElementById('result-count');
     if (output) output.textContent = `${count} project${count === 1 ? '' : 's'}`;
@@ -131,13 +131,10 @@ if (enlargedImage) {
   document.querySelector('#lightbox').addEventListener('close', () => {enlargedImage.classList.remove('is-full-size');enlargedImage.setAttribute('aria-pressed','false');});
 }
 
-/* Original September 2026 portfolio sheets, using existing page images. */
+/* Portfolio sheets preserve the original page numbers for each edition. */
 (() => {
-  const archive = {"under-cantilever":{"title":"Under Cantilever","pages":[20,21,22,23,24,25]},"symphony":{"title":"Symphony of Wind, Light and Life","pages":[3,4,5,6,7]},"re-salting":{"title":"Re-Salting","pages":[8,9,10,11]},"sharing-above-park":{"title":"Sharing Above Park","pages":[12,13,14,15]},"a-home-for-us":{"title":"A Home for Us","pages":[16,17,18,19]},"texture-of-the-city":{"title":"Texture of the City","pages":[26]},"london-zines":{"title":"London, in Print","pages":[27]},"london-urban-studies":{"title":"London Urban Studies","pages":[27]},"black-citizen-brigade":{"title":"Black Citizen Brigade","pages":[28]},"i-over-x":{"title":"I over X","pages":[28]}};
+  const archive = {"under-cantilever":{"title":"Under Cantilever","pages":[4,5,6,7,8,9],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"symphony":{"title":"Symphony of Wind, Light and Life","pages":[10,11,12,13,14],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"gowanus-flow":{"title":"Gowanus Flow","pages":[15,16,17,18],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"re-salting":{"title":"Re-Salting: Salt as Urban Landscape","pages":[19,20,21,22],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"sharing-above-park":{"title":"Sharing Above Park","pages":[23,24,25,26],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"texture-of-the-city":{"title":"Texture of the City","pages":[27],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"fable-of-watertown":{"title":"Fable of Watertown","pages":[28],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"london-zines":{"title":"London, in Print","pages":[29],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"london-urban-studies":{"title":"London Urban Studies","pages":[29],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"black-citizen-brigade":{"title":"Black Citizen Brigade","pages":[30],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"i-over-x":{"title":"I over X","pages":[30],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"gowanus-research-zine":{"title":"The Gowanus Gazette & Urban Research","pages":[16],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"beyond":{"title":"Beyond?","pages":[27,28,29,30],"date":"November 12, 2026","imageBase":"/portfolio/assets/portfolio-20261112/sheet-"},"a-home-for-us":{"title":"A Home for Us","pages":[16,17,18,19]}};
   const slug = location.pathname.replace(/\/index\.html$/, '/').split('/').filter(Boolean).pop();
-  if (slug === 'under-cantilever') {
-    archive[slug] = {title: 'Under Cantilever', pages: [3,4,5,6,7,8], date: 'October 2026', imageBase: '/portfolio/assets/cantilever-202610/sheet-'};
-  }
   const project = archive[slug];
   const anchor = document.querySelector('.next-project');
   if (!project || !anchor || document.getElementById('portfolio-original')) return;
@@ -162,7 +159,7 @@ if (enlargedImage) {
     const page=project.pages[index];
     const src=pageSource(page);
     error.hidden=true;
-    img.src=src;img.alt=project.title+' — original portfolio page '+page;
+    img.src=src;img.alt=project.title+' — '+(project.date || 'September 2026')+' portfolio page '+page;
     caption.textContent=(index+1)+' / '+project.pages.length+' · Portfolio page '+page;
     open.href=src; select.value=index;
     prev.disabled=index===0;next.disabled=index===project.pages.length-1;
@@ -187,7 +184,7 @@ if (enlargedImage) {
   reader.querySelector('.original-sheet').addEventListener('click',()=>{
     if(swiped){swiped=false;return;}
     document.dispatchEvent(new CustomEvent('portfolio:open-images', {detail: {
-      items: project.pages.map(page => ({src:pageSource(page),caption:project.title+' — original portfolio page '+page})),
+      items: project.pages.map(page => ({src:pageSource(page),caption:project.title+' — '+(project.date || 'September 2026')+' portfolio page '+page})),
       index, opener: reader.querySelector('.original-sheet'), onChange: show
     }}));
   });
